@@ -8,6 +8,8 @@ var path = require('path');
 var dirname = path.resolve(__dirname, '../images/');
 var writeTo = path.resolve(__dirname, '../', 'images.json');
 
+var ext = /.(jpg|png|gif)$/;
+
 function convertToBase64(filename) {
     return fsp.readFile(path.resolve(dirname, filename), 'base64').then(
       function(data) {
@@ -24,8 +26,8 @@ fs.readdir(dirname, function(err, filenames) {
 
   var actions = filenames.filter(
     function(filename) {
-      var re = /.jpg$/;
-      return re.test(filename);
+      
+      return ext.test(filename);
     }
   ).map(convertToBase64);
 
