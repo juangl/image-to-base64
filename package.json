@@ -1,0 +1,32 @@
+{
+  "name": "image-to-base64",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/convertToBase64.js",
+  "bin": {
+    "image-to-base64": "convertToBase64.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juangl/image-to-base64.git"
+  },
+  "keywords": [
+    "json",
+    "base64",
+    "images",
+    "bin"
+  ],
+  "author": "Juan Jesus Garcia Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juangl/image-to-base64/issues"
+  },
+  "homepage": "https://github.com/juangl/image-to-base64#readme",
+  "dependencies": {
+    "any-promise": "^1.3.0",
+    "fs-promise": "^0.5.0"
+  }
+}
